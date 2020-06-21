@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>uni人脸考勤系统 | LoYeOct</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="看脚下一片黑暗，望头顶星光璀璨">
+    <link rel="preload" href="/assets/css/0.styles.cf9e26c4.css" as="style"><link rel="preload" href="/assets/js/app.0bedb6f7.js" as="script"><link rel="preload" href="/assets/js/3.aee1869e.js" as="script"><link rel="preload" href="/assets/js/1.bfdec0ce.js" as="script"><link rel="preload" href="/assets/js/8.ae8c9ef0.js" as="script"><link rel="prefetch" href="/assets/js/10.3324c41a.js"><link rel="prefetch" href="/assets/js/11.e71dc4d5.js"><link rel="prefetch" href="/assets/js/12.1c7a81cc.js"><link rel="prefetch" href="/assets/js/13.35345580.js"><link rel="prefetch" href="/assets/js/14.b8ae0930.js"><link rel="prefetch" href="/assets/js/15.b6ece833.js"><link rel="prefetch" href="/assets/js/16.c6a6e666.js"><link rel="prefetch" href="/assets/js/17.c590063b.js"><link rel="prefetch" href="/assets/js/18.535f1edc.js"><link rel="prefetch" href="/assets/js/19.ac8c9bc7.js"><link rel="prefetch" href="/assets/js/4.e7ac7ee8.js"><link rel="prefetch" href="/assets/js/5.f490647b.js"><link rel="prefetch" href="/assets/js/6.46954f29.js"><link rel="prefetch" href="/assets/js/7.e77860b8.js"><link rel="prefetch" href="/assets/js/9.a57b59ab.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cf9e26c4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-19557b78><div data-v-19557b78><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-19557b78 data-v-19557b78><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-19557b78 data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>LoYeOct</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>LoYeOct</span>
+            
+          <!---->
+          2020
+        </a></span></div></div> <div class="hide" data-v-19557b78><header class="navbar" data-v-19557b78><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/portrait.png" alt="LoYeOct" class="logo"> <span class="site-name">LoYeOct</span></a> <div class="links"><!----> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/前端，后端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端，后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/序言/" class="nav-link"><i class="iconfont undefined"></i>
+  序言
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端/" class="nav-link"><i class="iconfont undefined"></i>
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog搭建/" class="nav-link"><i class="iconfont undefined"></i>
+  blog搭建
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div> <a href="https://github.com/LoYeOct" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-我的github"></i>
+    我的GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask" data-v-19557b78></div> <aside class="sidebar" data-v-19557b78><div class="personal-info-wrapper" data-v-042e23d4><img src="/hero.jpg" alt="author-avatar" class="personal-img" data-v-042e23d4> <h3 class="name" data-v-042e23d4>
+    LoYeOct
+  </h3> <div class="num" data-v-042e23d4><div data-v-042e23d4><h3 data-v-042e23d4>8</h3> <h6 data-v-042e23d4>Article</h6></div> <div data-v-042e23d4><h3 data-v-042e23d4>8</h3> <h6 data-v-042e23d4>Tag</h6></div></div> <hr data-v-042e23d4></div> <nav class="nav-links"><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/前端，后端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端，后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/序言/" class="nav-link"><i class="iconfont undefined"></i>
+  序言
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端/" class="nav-link"><i class="iconfont undefined"></i>
+  后端
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据库/" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/categories/blog搭建/" class="nav-link"><i class="iconfont undefined"></i>
+  blog搭建
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div> <a href="https://github.com/LoYeOct" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-我的github"></i>
+    我的GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>uni人脸考勤系统</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/frontend/uni%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%B3%BB%E7%BB%9F/uni%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%B3%BB%E7%BB%9F.html#前言" class="sidebar-link">前言</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notes/frontend/uni%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%B3%BB%E7%BB%9F/uni%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%B3%BB%E7%BB%9F.html#百度智能云配置" class="sidebar-link">百度智能云配置</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notes/frontend/uni%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%B3%BB%E7%BB%9F/uni%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%B3%BB%E7%BB%9F.html#uniapp配置" class="sidebar-link">uniAPP配置</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notes/frontend/uni%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%B3%BB%E7%BB%9F/uni%E4%BA%BA%E8%84%B8%E8%80%83%E5%8B%A4%E7%B3%BB%E7%BB%9F.html#c-服务端" class="sidebar-link">C#服务端</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-19557b78><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>uni人脸考勤系统</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>LoYeOct</span>
+            
+          <!---->
+          2020
+        </a></span></div></div> <div data-v-19557b78><main class="page"><div class="page-title" style="display:none;"><h1>uni人脸考勤系统</h1> <hr> <div data-v-34ea29db><i class="iconfont reco-account" data-v-34ea29db><span data-v-34ea29db>LoYeOct</span></i> <i class="iconfont reco-date" data-v-34ea29db><span data-v-34ea29db>2020-06-21</span></i> <!----> <i class="iconfont reco-tag tags" data-v-34ea29db><span class="tag-item" data-v-34ea29db>uni-APP,c#,baiduApI</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="uni人脸考勤系统"><a href="#uni人脸考勤系统" class="header-anchor">#</a> uni人脸考勤系统</h1> <hr> <h2 id="前言"><a href="#前言" class="header-anchor">#</a> 前言</h2> <p>本次人脸考勤系统以uniAPP作为APP开发语言，主要运用uni本身的插件市场，活体检测插件（付费），以及高德地图的定位系统，采集到人脸图像后发送到服务端，还是用C#语言做服务端处理，调用百度的离线sdk采集功能保存人脸信息到人脸库，以后每次考勤对照着人脸库的人脸图片进行识别记录就行了。</p> <h2 id="百度智能云配置"><a href="#百度智能云配置" class="header-anchor">#</a> 百度智能云配置</h2> <p>登录<a href="https://cloud.baidu.com/" target="_blank" rel="noopener noreferrer">百度智能云<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>,在控制台找到“人脸识别”服务
+<img src="/assets/img/kq1.6d3de480.png" alt="kq1"><br> <img src="/assets/img/kq2.359ee39b.png" alt="kq2"></p> <p>信息认证填完之后需要添加应用信息了，跟支付宝那边申请应用填写差不多Android和ios要分开申请，无非是一些名称，包名（好像是cmd命令会生成，google一下你就知道，做了有一段时间了，我忘记了嘿嘿嘿），应用场景和功能需求审核，审核通过后会获得固定的appid、appkey、secret_key，审核通过后百度这边的准备工作就完成了。</p> <h2 id="uniapp配置"><a href="#uniapp配置" class="header-anchor">#</a> uniAPP配置</h2> <p>uni这边是选择的直接去插件市场购买活体检测的SDK，<a href="https://ext.dcloud.net.cn/plugin?id=800" target="_blank" rel="noopener noreferrer">插件地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，不打包发布的话还是能免费用的，可以直接去下载demo跑一下，采集好的图片是Base64格式的，传到服务端转化成相对路径图片。由于本项目还需要获取当前考勤打卡的地理位置，我选择的是高德地图的SDK，<a href="https://lbs.amap.com/" target="_blank" rel="noopener noreferrer">高德开放平台<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>Android和ios一样，都是填写对应的安全码和包名即可生成对应的appkey
+<img src="/assets/img/kq3.73a9c083.png" alt="Android地图"></p> <p><img src="/assets/img/kq4.b6ff7748.png" alt="ios地图"></p> <p>配置到uniapp的manifest.json文件</p> <p><img src="/assets/img/kq5.5cedb7c1.png" alt="Appkey"></p> <p>获取地址位置代码</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">getKqLocation</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">var</span> _this <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+			_this<span class="token punctuation">.</span>dwloading <span class="token operator">=</span> <span class="token string">'iconfont icon-shuaxin turn'</span><span class="token punctuation">;</span>
+			<span class="token comment">//自带的geocode参数返回的详细地址不太准确，以下通过逆转换得来的地址稍准一些</span>
+			uni<span class="token punctuation">.</span><span class="token function">getLocation</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+				type<span class="token operator">:</span> <span class="token string">'wgs84'</span><span class="token punctuation">,</span>
+				<span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					_this<span class="token punctuation">.</span>dwloading <span class="token operator">=</span> <span class="token string">'iconfont icon-shuaxin'</span><span class="token punctuation">;</span>
+					_this<span class="token punctuation">.</span>location<span class="token punctuation">.</span>longitude <span class="token operator">=</span> res<span class="token punctuation">.</span>longitude<span class="token punctuation">;</span> <span class="token comment">//当前位置的经度</span>
+					_this<span class="token punctuation">.</span>location<span class="token punctuation">.</span>latitude <span class="token operator">=</span> res<span class="token punctuation">.</span>latitude<span class="token punctuation">;</span> <span class="token comment">//当前位置的纬度</span>
+					_this<span class="token punctuation">.</span>map<span class="token punctuation">.</span><span class="token function">moveToLocation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//地图移动到定位中心</span>
+					<span class="token keyword">var</span> point <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">plus<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>Point</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>longitude<span class="token punctuation">,</span> res<span class="token punctuation">.</span>latitude<span class="token punctuation">)</span><span class="token punctuation">;</span>
+					plus<span class="token punctuation">.</span>maps<span class="token punctuation">.</span>Map<span class="token punctuation">.</span><span class="token function">reverseGeocode</span><span class="token punctuation">(</span>
+						point<span class="token punctuation">,</span>
+						<span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+						<span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+							<span class="token keyword">var</span> address <span class="token operator">=</span> event<span class="token punctuation">.</span>address<span class="token punctuation">;</span> <span class="token comment">// 转换后的地理位置</span>
+							<span class="token keyword">var</span> point <span class="token operator">=</span> event<span class="token punctuation">.</span>coord<span class="token punctuation">;</span> <span class="token comment">// 转换后的坐标信息</span>
+							<span class="token keyword">var</span> coordType <span class="token operator">=</span> event<span class="token punctuation">.</span>coordType<span class="token punctuation">;</span> <span class="token comment">// 转换后的坐标系类型</span>
+							_this<span class="token punctuation">.</span>showAddress <span class="token operator">=</span> address<span class="token punctuation">;</span>
+						<span class="token punctuation">}</span><span class="token punctuation">,</span>
+						<span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+					<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><h2 id="c-服务端"><a href="#c-服务端" class="header-anchor">#</a> C#服务端</h2> <p>要做人脸识别当然第一步得先把人脸图片存到百度的人脸库</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code> <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">string</span></span> <span class="token function">FaceSyncBaidu</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> picPath <span class="token operator">=</span> KZ<span class="token punctuation">.</span>Comm<span class="token punctuation">.</span>KZRequest<span class="token punctuation">.</span><span class="token function">GetFormString</span><span class="token punctuation">(</span><span class="token string">&quot;picPath&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+             <span class="token class-name"><span class="token keyword">string</span></span> img <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">KZ<span class="token punctuation">.</span>Comm<span class="token punctuation">.</span>Tools</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Base64StringToImage</span><span class="token punctuation">(</span>picPath<span class="token punctuation">,</span><span class="token string">&quot;User_Img&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//转换成图片保存路径</span>
+              retStr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">appTb_check_Server</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">SyncBaidu</span><span class="token punctuation">(</span>picPath<span class="token punctuation">,</span> personInfo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> retStr<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+         <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">string</span></span> <span class="token function">SyncBaidu</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> picPath<span class="token punctuation">,</span> <span class="token class-name">appTb_person</span> personInfo<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> retStr <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+            <span class="token class-name">KZ<span class="token punctuation">.</span>Web<span class="token punctuation">.</span>ai_baidu_face</span> ai <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">KZ<span class="token punctuation">.</span>Web<span class="token punctuation">.</span>ai_baidu_face</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> imgtype <span class="token operator">=</span> <span class="token string">&quot;BASE64&quot;</span><span class="token punctuation">;</span><span class="token comment">//URL//FACE_TOKEN</span>
+            <span class="token comment">//base64模式       </span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">string</span><span class="token punctuation">.</span><span class="token function">IsNullOrEmpty</span><span class="token punctuation">(</span>picPath<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token class-name"><span class="token keyword">var</span></span> jsonobj <span class="token operator">=</span> ai<span class="token punctuation">.</span><span class="token function">UserAdd</span><span class="token punctuation">(</span>picPath<span class="token punctuation">,</span> imgtype<span class="token punctuation">,</span> <span class="token string">&quot;kq_person&quot;</span><span class="token punctuation">,</span> personInfo<span class="token punctuation">.</span>id<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> personInfo<span class="token punctuation">.</span>personName<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>jsonobj<span class="token punctuation">[</span><span class="token string">&quot;error_code&quot;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token class-name"><span class="token keyword">var</span></span> _retStr <span class="token operator">=</span> jsonobj<span class="token punctuation">[</span><span class="token string">&quot;result&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    <span class="token class-name"><span class="token keyword">var</span></span> facetoken <span class="token operator">=</span> _retStr<span class="token punctuation">[</span><span class="token string">&quot;face_token&quot;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token punctuation">?</span> <span class="token string">&quot;&quot;</span> <span class="token punctuation">:</span> _retStr<span class="token punctuation">[</span><span class="token string">&quot;face_token&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">string</span><span class="token punctuation">.</span><span class="token function">IsNullOrEmpty</span><span class="token punctuation">(</span>facetoken<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token comment">//写入</span>
+                        <span class="token class-name"><span class="token keyword">int</span></span> uptPersonCodeId <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">appTb_person_Server</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">uptPersonBaiduCode</span><span class="token punctuation">(</span>personInfo<span class="token punctuation">.</span>id<span class="token punctuation">,</span> facetoken<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <span class="token keyword">if</span> <span class="token punctuation">(</span>uptPersonCodeId <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                        <span class="token punctuation">{</span>
+                           <span class="token comment">//人脸库同步成功</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">else</span>
+                    <span class="token punctuation">{</span>
+                        retStr <span class="token operator">=</span> <span class="token string">&quot;返回人脸token失败！&quot;</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">else</span>
+                <span class="token punctuation">{</span>
+                    retStr <span class="token operator">=</span> <span class="token string">&quot;[人脸认证失败]:人脸照片模糊&quot;</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span>
+            <span class="token punctuation">{</span>
+                retStr <span class="token operator">=</span> <span class="token string">&quot;照片为空&quot;</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> retStr<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+</code></pre></div><p>百度API代码</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token keyword">using</span> <span class="token namespace">System</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Collections<span class="token punctuation">.</span>Generic</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Configuration</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>IO</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Linq</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Text</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">System<span class="token punctuation">.</span>Threading<span class="token punctuation">.</span>Tasks</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">Baidu<span class="token punctuation">.</span>Aip<span class="token punctuation">.</span>Face</span><span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token namespace">Newtonsoft<span class="token punctuation">.</span>Json<span class="token punctuation">.</span>Linq</span><span class="token punctuation">;</span>
+
+<span class="token keyword">namespace</span> <span class="token namespace">KZ<span class="token punctuation">.</span>Web</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Result_ai_baidu<span class="token punctuation">&lt;</span>T<span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">int</span></span> ret <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">string</span></span> msg <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name">T</span> data <span class="token punctuation">{</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token keyword">public</span>  <span class="token keyword">class</span> <span class="token class-name">ai_baidu_face</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name"><span class="token keyword">string</span></span> APP_ID <span class="token operator">=</span> ConfigurationManager<span class="token punctuation">.</span>AppSettings<span class="token punctuation">[</span><span class="token string">&quot;baidu_ai_face_appid&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name"><span class="token keyword">string</span></span> API_KEY <span class="token operator">=</span> ConfigurationManager<span class="token punctuation">.</span>AppSettings<span class="token punctuation">[</span><span class="token string">&quot;baidu_ai_face_appkey&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token class-name"><span class="token keyword">string</span></span> SECRET_KEY <span class="token operator">=</span> ConfigurationManager<span class="token punctuation">.</span>AppSettings<span class="token punctuation">[</span><span class="token string">&quot;baidu_ai_face_secret_key&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+
+
+        <span class="token comment">//人脸检测</span>
+        <span class="token comment">//人脸检测：检测图片中的人脸并标记出位置信息;</span>
+       <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">Detect</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> image<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> image_type<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token comment">// 如果有可选参数</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> options <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Dictionary<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;face_field&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;age&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;max_face_num&quot;</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;face_type&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;LIVE&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;liveness_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;LOW&quot;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">Detect</span><span class="token punctuation">(</span>image<span class="token punctuation">,</span> image_type<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">/// &lt;summary&gt;</span>
+        <span class="token comment">/// userid有值，就变成1:N认证模式，否则1：N模式</span>
+        <span class="token comment">/// &lt;/summary&gt;</span>
+        <span class="token comment">/// &lt;param name=&quot;image&quot;&gt;&lt;/param&gt;</span>
+        <span class="token comment">/// &lt;param name=&quot;image_type&quot;&gt;&lt;/param&gt;</span>
+        <span class="token comment">/// &lt;param name=&quot;groupidlist&quot;&gt;&lt;/param&gt;</span>
+        <span class="token comment">/// &lt;param name=&quot;user_id&quot;&gt;&lt;/param&gt;</span>
+        <span class="token comment">/// &lt;returns&gt;&lt;/returns&gt;</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">Search</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> image<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> image_type<span class="token punctuation">,</span><span class="token class-name"><span class="token keyword">string</span></span> groupidlist<span class="token punctuation">,</span><span class="token class-name"><span class="token keyword">string</span></span> user_id<span class="token operator">=</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token comment">//	var groupIdList = &quot;3,2&quot;;</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token comment">// 如果有可选参数</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>user_id <span class="token operator">!=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    <span class="token class-name"><span class="token keyword">var</span></span> options <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Dictionary<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;max_face_num&quot;</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;match_threshold&quot;</span><span class="token punctuation">,</span> <span class="token number">80</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;quality_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;NORMAL&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;liveness_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;LOW&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;user_id&quot;</span><span class="token punctuation">,</span> user_id<span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;max_user_num&quot;</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+                    re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">Search</span><span class="token punctuation">(</span>image<span class="token punctuation">,</span> image_type<span class="token punctuation">,</span> groupidlist<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">else</span>
+                <span class="token punctuation">{</span>
+                    <span class="token class-name"><span class="token keyword">var</span></span> options <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Dictionary<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>               
+                <span class="token punctuation">{</span><span class="token string">&quot;match_threshold&quot;</span><span class="token punctuation">,</span> <span class="token number">80</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;quality_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;NORMAL&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;liveness_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;NORMAL&quot;</span><span class="token punctuation">}</span> 
+                <span class="token punctuation">}</span><span class="token punctuation">;</span>
+                    re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">Search</span><span class="token punctuation">(</span>image<span class="token punctuation">,</span> image_type<span class="token punctuation">,</span> groupidlist<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+
+        <span class="token comment">/// &lt;summary&gt;</span>
+        <span class="token comment">/// </span>
+        <span class="token comment">/// &lt;/summary&gt;</span>
+        <span class="token comment">/// &lt;param name=&quot;image&quot;&gt;图片信息(总数据大小应小于10M)，图片上传方式根据image_type来判断。注：组内每个uid下的人脸图片数目上限为20张&lt;/param&gt;</span>
+        <span class="token comment">/// &lt;param name=&quot;image_type&quot;&gt;图片类型 BASE64:图片的base64值，base64编码后的图片数据， 编码后的图片大小不超过2M；URL:图片的 URL地址( 可能由于网络等原因导致下载图片时间过长)；FACE_TOKEN: 人脸图片的唯一标识，调用人脸检测接口时，会为每个人脸图片赋予一个唯一的FACE_TOKEN，同一张图片多次检测得到的FACE_TOKEN是同一个&lt;/param&gt;</span>
+        <span class="token comment">///  &lt;param name=&quot;groupid&quot;&gt;用户组id（由数字、字母、下划线组成），长度限制128B&lt;/param&gt;</span>
+        <span class="token comment">/// &lt;param name=&quot;user_id&quot;&gt;用户id（由数字、字母、下划线组成），长度限制128B&lt;/param&gt;</span>
+        <span class="token comment">/// &lt;param name=&quot;user_info&quot;&gt;用户资料，长度限制256B&lt;/param&gt;</span>
+
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">UserAdd</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> image<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> image_type<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> groupid<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> user_id<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> user_info<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token comment">// 如果有可选参数</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> options <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Dictionary<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>
+            <span class="token punctuation">{</span><span class="token string">&quot;user_info&quot;</span><span class="token punctuation">,</span>user_info<span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span><span class="token string">&quot;quality_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;NORMAL&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span><span class="token string">&quot;liveness_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;LOW&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span><span class="token string">&quot;action_type&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;REPLACE&quot;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">UserAdd</span><span class="token punctuation">(</span>image<span class="token punctuation">,</span> image_type<span class="token punctuation">,</span> groupid<span class="token punctuation">,</span> user_id<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">UserUpdate</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> image<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> image_type<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> groupid<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> user_id<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> user_info<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token comment">// 如果有可选参数</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> options <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Dictionary<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>
+            <span class="token punctuation">{</span><span class="token string">&quot;user_info&quot;</span><span class="token punctuation">,</span>user_info<span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span><span class="token string">&quot;quality_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;NORMAL&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span><span class="token string">&quot;liveness_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;LOW&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span><span class="token string">&quot;action_type&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;REPLACE&quot;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">UserUpdate</span><span class="token punctuation">(</span>image<span class="token punctuation">,</span> image_type<span class="token punctuation">,</span> groupid<span class="token punctuation">,</span> user_id<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">FaceDelete</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> user_id<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> groupid<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> facetoken<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">FaceDelete</span><span class="token punctuation">(</span>user_id<span class="token punctuation">,</span> groupid<span class="token punctuation">,</span> facetoken<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">//获取人脸库中某个用户的信息(user_info信息和用户所属的组)。</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">UserGet</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> user_id<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> groupid<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">UserGet</span><span class="token punctuation">(</span>user_id<span class="token punctuation">,</span> groupid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">//获取用户人脸列表</span>
+        <span class="token comment">// 用于获取一个用户的全部人脸列表。</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">FaceGetlist</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> user_id<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> groupid<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">FaceGetlist</span><span class="token punctuation">(</span>user_id<span class="token punctuation">,</span> groupid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 获取用户列表</span>
+        <span class="token comment">//用于查询指定用户组中的用户列表。</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">GroupGetusers</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> groupid<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">int</span></span> start<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">int</span></span> length<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>start <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">GroupGetusers</span><span class="token punctuation">(</span>groupid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+                <span class="token punctuation">}</span>
+                <span class="token keyword">else</span>
+                <span class="token punctuation">{</span>
+                    <span class="token class-name"><span class="token keyword">var</span></span> options <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Dictionary<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>
+                    <span class="token punctuation">{</span><span class="token string">&quot;start&quot;</span><span class="token punctuation">,</span> start<span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span><span class="token string">&quot;length&quot;</span><span class="token punctuation">,</span> length<span class="token punctuation">}</span>
+                     <span class="token punctuation">}</span><span class="token punctuation">;</span>
+                    <span class="token comment">// 带参数调用获取用户列表</span>
+                    re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">GroupGetusers</span><span class="token punctuation">(</span>groupid<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">UserCopy</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> user_id<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> src_group_id<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> dst_group_id<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+                <span class="token comment">// 如果有可选参数</span>
+                <span class="token class-name"><span class="token keyword">var</span></span> options <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Dictionary<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;src_group_id&quot;</span><span class="token punctuation">,</span> src_group_id<span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;dst_group_id&quot;</span><span class="token punctuation">,</span>dst_group_id<span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">UserCopy</span><span class="token punctuation">(</span>user_id<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">UserDelete</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> groupid<span class="token punctuation">,</span><span class="token class-name"><span class="token keyword">string</span></span> user_id<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">UserDelete</span><span class="token punctuation">(</span>groupid<span class="token punctuation">,</span>user_id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">GroupAdd</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> groupid<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">GroupAdd</span><span class="token punctuation">(</span>groupid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">GroupDelete</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> groupid<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">GroupDelete</span><span class="token punctuation">(</span>groupid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">//组列表查询</span>
+        <span class="token comment">//用于查询用户组的列表。</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">GroupGetlist</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> start<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">int</span></span> length<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>start <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> length <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">GroupGetlist</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+                <span class="token punctuation">}</span>
+                <span class="token keyword">else</span>
+                <span class="token punctuation">{</span>
+                    <span class="token class-name"><span class="token keyword">var</span></span> options <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Dictionary<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>
+                    <span class="token punctuation">{</span><span class="token string">&quot;start&quot;</span><span class="token punctuation">,</span> start<span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">{</span><span class="token string">&quot;length&quot;</span><span class="token punctuation">,</span> length<span class="token punctuation">}</span>
+                     <span class="token punctuation">}</span><span class="token punctuation">;</span>
+                    <span class="token comment">// 带参数调用获取用户列表</span>
+                    re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">GroupGetlist</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+
+        <span class="token comment">//身份验证</span>
+        <span class="token comment">//质量检测（可选）活体检测（可选）公安验证（必选）</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">PersonVerify</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> image<span class="token punctuation">,</span><span class="token class-name"><span class="token keyword">string</span></span> imageType<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> idCardNumber<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> name<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+                <span class="token comment">// 如果有可选参数</span>
+                <span class="token class-name"><span class="token keyword">var</span></span> options <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Dictionary<span class="token punctuation">&lt;</span><span class="token keyword">string</span><span class="token punctuation">,</span> <span class="token keyword">object</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;quality_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;NORMAL&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token string">&quot;liveness_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;LOW&quot;</span><span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">PersonVerify</span><span class="token punctuation">(</span>image<span class="token punctuation">,</span> imageType<span class="token punctuation">,</span> idCardNumber<span class="token punctuation">,</span> name<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">//image_type图片类型 BASE64:图片的base64值，base64编码后的图片数据， 编码后的图片大小不超过2M；URL:图片的 URL地址( 可能由于网络等原因导致下载图片时间过长)；FACE_TOKEN: 人脸图片的唯一标识，调用人脸检测接口时，会为每个人脸图片赋予一个唯一的FACE_TOKEN，同一张图片多次检测得到的FACE_TOKEN是同一个。</span>
+
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">FaceMatch</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> image1<span class="token punctuation">,</span><span class="token class-name"><span class="token keyword">string</span></span> image_type1<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> image2<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> image_type2<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+               
+                <span class="token class-name"><span class="token keyword">var</span></span> faces <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JArray</span>
+                <span class="token punctuation">{</span>
+                    <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;image&quot;</span><span class="token punctuation">,</span>image1<span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;image_type&quot;</span><span class="token punctuation">,</span> image_type1<span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;face_type&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;LIVE&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;quality_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;LOW&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;liveness_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;NONE&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;image&quot;</span><span class="token punctuation">,</span> image2<span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;image_type&quot;</span><span class="token punctuation">,</span> image_type2<span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;face_type&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;LIVE&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;quality_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;LOW&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;liveness_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;NONE&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">;</span>
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">Match</span><span class="token punctuation">(</span>faces<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+
+        <span class="token punctuation">}</span>
+        <span class="token keyword">public</span> <span class="token return-type class-name">JObject</span> <span class="token function">Faceverify</span><span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">string</span></span> image1<span class="token punctuation">,</span> <span class="token class-name"><span class="token keyword">string</span></span> image_type1<span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name">JObject</span> re <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> client <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">Face</span><span class="token punctuation">(</span>API_KEY<span class="token punctuation">,</span> SECRET_KEY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            client<span class="token punctuation">.</span>Timeout <span class="token operator">=</span> <span class="token number">6000</span><span class="token punctuation">;</span>
+            <span class="token keyword">try</span>
+            <span class="token punctuation">{</span>
+
+                <span class="token class-name"><span class="token keyword">var</span></span> faces <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JArray</span>
+                <span class="token punctuation">{</span>
+                    <span class="token keyword">new</span> <span class="token constructor-invocation class-name">JObject</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;image&quot;</span><span class="token punctuation">,</span> image1<span class="token punctuation">}</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">{</span><span class="token string">&quot;image_type&quot;</span><span class="token punctuation">,</span> image_type1<span class="token punctuation">}</span>
+                       
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">;</span>
+                re <span class="token operator">=</span> client<span class="token punctuation">.</span><span class="token function">Faceverify</span><span class="token punctuation">(</span>faces<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">catch</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> re<span class="token punctuation">;</span>
+
+        <span class="token punctuation">}</span>
+        
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>考勤人脸对比</p> <div class="language-csharp extra-class"><pre class="language-csharp"><code><span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">string</span></span> <span class="token function">FaceKq</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> retStr <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> picPath <span class="token operator">=</span> KZ<span class="token punctuation">.</span>Comm<span class="token punctuation">.</span>KZRequest<span class="token punctuation">.</span><span class="token function">GetFormString</span><span class="token punctuation">(</span><span class="token string">&quot;picPath&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> infoPic <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">KZ<span class="token punctuation">.</span>Comm<span class="token punctuation">.</span>Tools</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Base64StringToImage</span><span class="token punctuation">(</span>picPath<span class="token punctuation">,</span><span class="token string">&quot;User_Img&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//保存考勤详细存贮的照片并返回路径</span>
+            <span class="token comment">//人脸照片考勤</span>
+            <span class="token class-name">ai_baidu_face</span> ai <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">ai_baidu_face</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> img <span class="token operator">=</span> picPath<span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> imgtype <span class="token operator">=</span> <span class="token string">&quot;BASE64&quot;</span><span class="token punctuation">;</span>
+            <span class="token class-name"><span class="token keyword">string</span></span> groupid <span class="token operator">=</span> <span class="token string">&quot;kq_person&quot;</span><span class="token punctuation">;</span><span class="token comment">//人脸库的组名，我这只需要一个组使用写成常量就行了，有多个的话就动态读取所属组类别</span>
+            <span class="token class-name"><span class="token keyword">var</span></span> fobj <span class="token operator">=</span> ai<span class="token punctuation">.</span><span class="token function">Search</span><span class="token punctuation">(</span>img<span class="token punctuation">,</span> imgtype<span class="token punctuation">,</span> groupid<span class="token punctuation">,</span>personId<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>fobj<span class="token punctuation">[</span><span class="token string">&quot;error_code&quot;</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            <span class="token punctuation">{</span>
+                <span class="token keyword">try</span>
+                <span class="token punctuation">{</span>
+                    <span class="token class-name"><span class="token keyword">var</span></span> reobj <span class="token operator">=</span> fobj<span class="token punctuation">[</span><span class="token string">&quot;result&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    <span class="token class-name"><span class="token keyword">var</span></span> oneuser <span class="token operator">=</span> reobj<span class="token punctuation">[</span><span class="token string">&quot;user_list&quot;</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                    <span class="token class-name"><span class="token keyword">string</span></span> userName <span class="token operator">=</span> oneuser<span class="token punctuation">[</span><span class="token string">&quot;user_info&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//入人脸库时传的是姓名</span>
+                    <span class="token class-name"><span class="token keyword">int</span></span> userId <span class="token operator">=</span> KZ<span class="token punctuation">.</span>Comm<span class="token punctuation">.</span>Tools<span class="token punctuation">.</span><span class="token function">retIntType</span><span class="token punctuation">(</span>oneuser<span class="token punctuation">[</span><span class="token string">&quot;user_id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//入人脸库时的人员id</span>
+                    <span class="token class-name"><span class="token keyword">string</span></span> backCode <span class="token operator">=</span> fobj<span class="token punctuation">[</span><span class="token string">&quot;log_id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//百度返回的随机数，唯一</span>
+                    <span class="token class-name"><span class="token keyword">int</span></span> retPeronId <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">appTb_person_Server</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">CheckPerson</span><span class="token punctuation">(</span>userId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>retPeronId <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">{</span>
+                        <span class="token class-name"><span class="token keyword">int</span></span> kqId <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">appTb_check_Server</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">AddKaoQin</span><span class="token punctuation">(</span>personId<span class="token punctuation">,</span> backCode<span class="token punctuation">,</span> longitude<span class="token punctuation">,</span> latitude<span class="token punctuation">,</span> address<span class="token punctuation">,</span> addTime<span class="token punctuation">,</span> kqType<span class="token punctuation">,</span> infoPic<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <span class="token keyword">if</span> <span class="token punctuation">(</span>kqId <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span>
+                        <span class="token punctuation">{</span>
+                            retStr <span class="token operator">=</span> <span class="token string">&quot;人脸考勤成功&quot;</span><span class="token punctuation">;</span>
+                        <span class="token punctuation">}</span>
+                        <span class="token keyword">else</span> 
+                        <span class="token punctuation">{</span>
+                            retStr <span class="token operator">=</span> <span class="token string">&quot;人脸考勤失败&quot;</span><span class="token punctuation">;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token keyword">else</span>
+                    <span class="token punctuation">{</span>
+                        retStr <span class="token operator">=</span> <span class="token string">&quot;该人员已删除，请更新人脸库&quot;</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> ex<span class="token punctuation">)</span>
+                <span class="token punctuation">{</span>
+                    retStr <span class="token operator">=</span> ex<span class="token punctuation">.</span>Message <span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">else</span>
+            <span class="token punctuation">{</span>
+                retStr <span class="token operator">=</span>  fobj<span class="token punctuation">[</span><span class="token string">&quot;error_msg&quot;</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">return</span> retStr<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-44bd5a18 data-v-44bd5a18><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-44bd5a18><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-44bd5a18></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-44bd5a18></path></svg></div></div></div>
+    <script src="/assets/js/app.0bedb6f7.js" defer></script><script src="/assets/js/3.aee1869e.js" defer></script><script src="/assets/js/1.bfdec0ce.js" defer></script><script src="/assets/js/8.ae8c9ef0.js" defer></script>
+  </body>
+</html>
